@@ -1,6 +1,7 @@
-package com.naver.project.model.dto;
+package com.naver.project1.model.dto;
 
-import java.sql.Date;
+
+import java.util.Date;
 
 public class EmployeeDTO {
     private String empId;
@@ -11,6 +12,7 @@ public class EmployeeDTO {
     private String deptCode;
     private String jobCode;
     private int salary;
+    private String salLevel;
     private double bonus;
     private String managerId;
     private Date hireDate;
@@ -20,7 +22,7 @@ public class EmployeeDTO {
     public EmployeeDTO() {
     }
 
-    public EmployeeDTO(String empId, String empName, String empNo, String email, String phone, String deptCode, String jobCode, int salary, double bonus, String managerId, Date hireDate, Date entDate, String entYn) {
+    public EmployeeDTO(String empId, String empName, String empNo, String email, String phone, String deptCode, String jobCode, int salary, String salLevel, double bonus, String managerId, Date hireDate, Date entDate, String entYn) {
         this.empId = empId;
         this.empName = empName;
         this.empNo = empNo;
@@ -29,6 +31,7 @@ public class EmployeeDTO {
         this.deptCode = deptCode;
         this.jobCode = jobCode;
         this.salary = salary;
+        this.salLevel = salLevel;
         this.bonus = bonus;
         this.managerId = managerId;
         this.hireDate = hireDate;
@@ -100,6 +103,14 @@ public class EmployeeDTO {
         this.salary = salary;
     }
 
+    public String getSalLevel() {
+        return salLevel;
+    }
+
+    public void setSalLevel(String salLevel) {
+        this.salLevel = salLevel;
+    }
+
     public double getBonus() {
         return bonus;
     }
@@ -151,6 +162,7 @@ public class EmployeeDTO {
                 ", deptCode='" + deptCode + '\'' +
                 ", jobCode='" + jobCode + '\'' +
                 ", salary=" + salary +
+                ", salLevel='" + salLevel + '\'' +
                 ", bonus=" + bonus +
                 ", managerId='" + managerId + '\'' +
                 ", hireDate=" + hireDate +

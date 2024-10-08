@@ -8,13 +8,13 @@
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost/employeedb"/>
+                <property name="url" value="jdbc:mysql://localhost/employee"/>
                 <property name="username" value="ohgiraffers"/>
                 <property name="password" value="ohgiraffers"/>
             </dataSource>
         </environment>
     </environments>
     <mappers>
-        <mapper resource="com/ohgiraffers/section01/xmlconfig/menu-mapper.xml"/>
+        <mapper resource="com/naver/project1/menu-mappername.xml"/>
     </mappers>
 </configuration>
