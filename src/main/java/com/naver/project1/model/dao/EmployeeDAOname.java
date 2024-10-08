@@ -5,7 +5,6 @@ import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
 
-import static com.naver.project1.common.Template.getSqlSession;
 
 public class EmployeeDAOname {
 
