@@ -1,20 +1,27 @@
 💢 24/10/08 Mission 💢
+
 MyBatis 와 Git 활용한 팀별 프로젝트 만들기
+
 요구사항
 Main 메소드는 Application 하나만 존재한다.
 mapper.xml 파일은 각자 1개 씩 만든다.
 Application 에서는 개인의 view 페이지로 넘어갈 수 있는 메뉴창을 만든다.
+
 개인별로 Controller, Service, Dao, DTO 작성한다.
 개인별로 push 는 1개의 기능이 완성되면 수행한다. -> ex) select 기능 완성하면 push
+
 역할 구분
+
 형상관리자
 팀 프로젝트 Repository 세팅
 프로젝트 패키지 구조 설정
 사전에 만들어두면 좋은 파일 미리 만들어두고 push
 파일 병합
+
 PM
 팀원 별 프로젝트 기능 요구사항 종합
 요구사항 명세서 작성
+
 DBA
 어떤 DataBase 사용할 지 선택
 menudb, employee, chundb 사용 가능
