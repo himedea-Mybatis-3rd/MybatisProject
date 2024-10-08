@@ -1,6 +1,6 @@
 package com.naver.project1.model.dto;
 
-public class EmployeeDTOname {
+public class EmployeeDTOnameGyunam {
 
     private int empId;
     private String hireDate;
@@ -13,11 +13,11 @@ public class EmployeeDTOname {
     private String empName;
     private String locationId;
 
-    public EmployeeDTOname () {}
+    public EmployeeDTOnameGyunam() {}
 
-    public EmployeeDTOname(int empId, String hireDate, String deptId, String deptTitle,
-                           String nationalCode, String nationalName, String jobCode,
-                           String jobName, String empName, String locationId) {
+    public EmployeeDTOnameGyunam(int empId, String hireDate, String deptId, String deptTitle,
+                                 String nationalCode, String nationalName, String jobCode,
+                                 String jobName, String empName, String locationId) {
         this.empId = empId;
         this.hireDate = hireDate;
         this.deptId = deptId;

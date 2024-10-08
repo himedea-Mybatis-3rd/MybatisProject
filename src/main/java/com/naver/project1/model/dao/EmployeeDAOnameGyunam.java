@@ -1,13 +1,13 @@
 package com.naver.project1.model.dao;
 
-import com.naver.project1.model.dto.EmployeeDTOname;
+import com.naver.project1.model.dto.EmployeeDTOnameGyunam;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
 
-public class EmployeeDAOname {
+public class EmployeeDAOnameGyunam {
 
-    public List<EmployeeDTOname> selectAllMenu(SqlSession sqlSession) {
+    public List<EmployeeDTOnameGyunam> selectAllMenu(SqlSession sqlSession) {
 
         return sqlSession.selectList("EmployeeMapper.selectAllMenu");
     }
