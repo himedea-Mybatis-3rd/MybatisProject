@@ -30,3 +30,8 @@ menudb, employee, chundb 사용 가능
 만들고 싶은 기능 생각, 요구사항 명세 작성
 각자 view 페이지 작성
 crud 기능 -> select, insert, delete, update 구현
+
+<br>
+
+<h3> 🌈정근희 진행상황🌈 </h3>
+<p> [24.10.08 수정내용] employee 테이블 전체조회 기능 추가완료  </p>
