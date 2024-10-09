@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="EmployeeMapper">
+
+    <resultMap id="employeeResultMap" type="com.naver.project1.model.dto.EmployeeDTOGyunam">
+        <id property="empId" column="EMP_ID"/>
+        <id property="jobCode" column="JOB_CODE"/>
+        <id property="nationalCode" column="NATIONAL_CODE"/>
+        <id property="depId" column="DEPT_ID"/>
+        <result property="phone" column="PHONE"/>
+        <result property="salary" column="SALARY"/>
+        <result property="empName" column="EMP_NAME"/>
+        <result property="deptTitle" column="DEPT_TITLE"/>
+        <result property="locationId" column="LOCATION_ID"/>
+        <result property="nationalName" column="NATIONAL_NAME"/>
+        <result property="jobName" column="JOB_NAME"/>
+    </resultMap>
+
+    <select id="selectEmployee" resultMap="employeeResultMap">
+        SELECT
+            EMP_NAME
+        FROM
+            EMPLOYEE
+        WHERE
+            LEFT(HIRE_DATE,2) = 20;
+    </select>
+    <insert id="insertEmployee" parameterType="com.naver.project1.model.dto.EmployeeDTOGyunam">
+        INSERT INTO DEPARTMENT
+        (DEPT_ID , DEPT_TITLE , LOCATION_ID)
+        VALUES
+        (#{depId} , #{deptTitle} , #{locationId});
+    </insert>
+    <update id="updateEmployee" parameterType="com.naver.project1.model.dto.EmployeeDTOGyunam">
+        UPDATE
+            NATION
+        SET
+             NATIONAL_CODE = #{nationalCode}
+            ,NATIONAL_NAME = #{nationalName}
+        WHERE
+          NATIONAL_CODE = 'KO';
+    </update>
+
+    <delete id="deleteEmployee" parameterType="com.naver.project1.model.dto.EmployeeDTOGyunam">
+        DELETE FROM
+            JOB
+        WHERE
+            JOB_CODE = 'J7';
+    </delete>
+</mapper>
