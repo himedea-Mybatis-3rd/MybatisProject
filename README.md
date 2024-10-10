@@ -35,3 +35,4 @@ crud 기능 -> select, insert, delete, update 구현
 
 <h3> 🌈정근희 진행상황🌈 </h3>
 <p> [24.10.08 수정내용] employee 테이블 전체조회 기능 추가완료  </p>
+<p> [24.10.10 수정내용] employee 테이블 직급별조회 신규직원 추가완료  </p>
