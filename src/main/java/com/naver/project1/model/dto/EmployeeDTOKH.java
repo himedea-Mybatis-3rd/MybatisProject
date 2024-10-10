@@ -2,7 +2,7 @@ package com.naver.project1.model.dto;
 
 import java.sql.Date;
 
-public class EmployeeDTO {
+public class EmployeeDTOKH {
     private String empId;
     private String empName;
     private String empNo;
@@ -18,10 +18,10 @@ public class EmployeeDTO {
     private Date entDate;
     private String entYn;
 
-    public EmployeeDTO() {
+    public EmployeeDTOKH() {
     }
 
-    public EmployeeDTO(String empId, String empName, String empNo, String email, String phone, String deptCode, String jobCode, String salLevel, int salary, double bonus, String managerId, Date hireDate, Date entDate, String entYn) {
+    public EmployeeDTOKH(String empId, String empName, String empNo, String email, String phone, String deptCode, String jobCode, String salLevel, int salary, double bonus, String managerId, Date hireDate, Date entDate, String entYn) {
         this.empId = empId;
         this.empName = empName;
         this.empNo = empNo;

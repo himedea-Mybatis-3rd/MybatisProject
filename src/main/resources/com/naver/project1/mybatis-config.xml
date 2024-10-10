@@ -15,7 +15,11 @@
         </environment>
     </environments>
     <mappers>
+
+        <mapper resource="com/naver/project1/menu-mapperKH.xml"/>
+
         <mapper resource="com/naver/project1/menu-mappername.xml"/>
         <mapper resource="com/naver/project1/menu-mapperGyunam.xml"/>
+
     </mappers>
 </configuration>
